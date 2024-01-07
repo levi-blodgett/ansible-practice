@@ -1,0 +1,9 @@
+---
+- name: Echo a message
+  ansible.builtin.command: echo "Hello, Ansible is connected!"
+  changed_when: false
+  register: output
+
+- name: Display the message
+  ansible.builtin.debug:
+    msg: "{{ output.stdout }}"

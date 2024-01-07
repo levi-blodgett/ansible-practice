@@ -1,3 +1,6 @@
+# Ignore SSH pub key
 files/*.pub
+
+# Ignore generated dirs
 .venv
 .idea

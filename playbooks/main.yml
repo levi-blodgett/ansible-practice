@@ -1,0 +1,7 @@
+---
+- name: Test Ansible Connection with Role
+  hosts: all
+  become: true
+
+  roles:
+    - connection_test
